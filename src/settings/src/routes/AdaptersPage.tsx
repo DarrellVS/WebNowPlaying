@@ -248,7 +248,7 @@ const CustomAdapter: Component<{ adapter: TCustomAdapter; info: SocketInfoState 
             // Checks if the port is valid
             try {
               // eslint-disable-next-line no-new
-              new URL(`ws://127.0.0.1:${port}`);
+              new URL(`ws://192.168.178.28:${port}`);
             } catch {
               return;
             }

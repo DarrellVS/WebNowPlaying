@@ -35,7 +35,7 @@ export class WNPSocket {
     // try/catch does nothing. If the connection fails, it will call onError.
     // The extension will only log errors to chrome://extensions if it's loaded unpacked.
     // It won't show those errors to the user.
-    this.ws = new WebSocket(`ws://127.0.0.1:${this.adapter.port}`);
+    this.ws = new WebSocket(`ws://192.168.178.28:${this.adapter.port}`);
     this.ws.onopen = this.onOpen.bind(this);
     this.ws.onclose = this.onClose.bind(this);
     this.ws.onerror = this.onError.bind(this);
